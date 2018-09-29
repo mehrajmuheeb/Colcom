@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+ <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/otpconfirmcoordinatorlayout"
+        tools:context=".OTPConfirm"/>
+    
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        android:id="@+id/appBarLayout"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/otptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/background_layout"
+        android:orientation="vertical"
+        android:id="@+id/relative_otp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="gravity"
+                    android:layout_centerVertical="true"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:id="@+id/input_OTP"
+                    android:hint="@string/enter_your_otp_here"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmOTP"
+                android:padding="10dp"
+                android:background="@drawable/button_raised"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text_color"
+                android:textSize="18sp"
+                android:id="@+id/btn_confirmOTP" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resendOTP"
+                android:text="@string/resend_otp"
+                android:textColor="@color/clickable_text"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="12dp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/ic_register" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_otp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:id="@+id/LinearOTP">
+
+
+
+    <TextView
+        android:text="@string/time_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:id="@+id/countDownText" />
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         android:padding="10dp"
+         android:id="@+id/timerText"
+         android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/timerFinishText"
+        android:layout_below="@+id/LinearOTP"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

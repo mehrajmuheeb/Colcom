@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_postnotification"
+        android:title="Post Notification"
+        android:icon="@drawable/ic_settings"/>
+
+
+
+    <item
+        android:id="@+id/action_sentitem"
+        android:title="Sent Notifications"
+        android:icon="@drawable/ic_settings"/>
+    <item
+        android:id="@+id/action_abc"
+        android:title="Receive Notification"
+        android:icon="@drawable/ic_settings"/>
+</menu>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="muheeb.com.colcom20.FacultyNotification"
+    android:background="@drawable/background_postnotifications">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/facultystudentnotification"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme"/>
+    <EditText
+        android:id="@+id/stsubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Subject/Title"
+        android:background="@drawable/edit_text_shape"
+        android:textColor="@color/text_black"
+        android:layout_below="@+id/facultystudentnotification"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/stnotify"
+        android:hint="Post your notification here......"
+        android:layout_below="@+id/stsubject"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/edit_text_shape"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/stlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter Url if any or leave blank as default"
+        android:background="@drawable/edit_text_shape"
+        android:textColor="@color/text_black"
+        android:layout_below="@+id/stnotify"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/stpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/button_raised"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/stsubject" />
+
+</RelativeLayout>

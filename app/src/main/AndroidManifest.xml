@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="muheeb.com.colcom20">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".WelcomeActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".OTPConfirm"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".TabActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Feedback"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="Feedback" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FeedbackQuestions"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:parentActivityName=".TabActivity" >
+
+            <intent-filter>
+                <action android:name="MessageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Notification_Activity"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="Notification_Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DisplayNotification" />
+        <activity
+            android:name=".StudentNotification"
+            android:parentActivityName=".Notification_Activity" />
+        <activity
+            android:name=".DisplayList"
+            android:parentActivityName=".TabActivity" />
+        <activity
+            android:name=".FacultyNotification"
+            android:parentActivityName=".Notification_Activity" />
+
+
+
+        <!-- Firebase Notifications -->
+        <service android:name=".COLCOMFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".COLCOMFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Firebase Notifications -->
+
+        <activity
+            android:name=".FacultyStudentNotification"
+            android:parentActivityName=".Notification_Activity" />
+        <activity
+            android:name=".FacultyDisplayList"
+            android:parentActivityName=".TabActivity" />
+        <activity
+            android:name=".FeedbackTeacher"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="FeedbackTeacher" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Repository"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SentMessages"
+            android:parentActivityName=".Notification_Activity" />
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>

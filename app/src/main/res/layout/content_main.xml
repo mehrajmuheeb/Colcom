@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="65dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardElevation="4sp"
+            app:cardCornerRadius="10sp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:longClickable="false">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_profile"
+                android:layout_weight="1"
+                android:id="@+id/profilePic"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:text="Andleeb Amin"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="4sp"
+            app:contentPadding="10dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:id="@+id/setTagline"
+                android:gravity="center_vertical|center_horizontal"   >
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Designation"
+                    android:id="@+id/department"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.14"
+                    android:padding="5dp" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/text_black"
+                    android:layout_gravity="right" />
+
+                <TextView
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:textAlignment="center"
+                    android:id="@+id/year"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_weight="0.14"
+                    android:padding="5dp" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:contentPadding="5dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5sp"
+            app:cardElevation="4sp"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+
+                    <RelativeLayout
+                        android:id="@+id/number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/mynotification"
+                                android:layout_width="65dip"
+                                android:layout_height="65dip"
+                                android:background="@drawable/ic_notify2"
+                                android:paddingLeft="50dp"
+                                android:paddingRight="50dp"
+                                android:text="Notification"
+                                android:textColor="#fff"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+
+                        </RelativeLayout>
+
+
+
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/badge_notification"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignLeft="@id/relative_layout1"-->
+                            <!--android:text="0"-->
+                            <!--android:textColor="#FFF"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:textStyle="bold" />-->
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_layout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/my_chat"
+                                android:layout_width="65dip"
+                                android:layout_height="65dip"
+                                android:background="@drawable/ic_chat"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/badge_chat"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignRight="@id/relative_layout2"-->
+                            <!--android:text="0"-->
+                            <!--android:textColor="#FFF"-->
+                            <!--android:textSize="16sp"-->
+                            <!--android:textStyle="bold" />-->
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+

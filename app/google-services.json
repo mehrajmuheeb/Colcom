@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "864342398009",
+    "firebase_url": "https://colcom1-eb741.firebaseio.com",
+    "project_id": "colcom1-eb741",
+    "storage_bucket": "colcom1-eb741.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864342398009:android:6c67b4e01ca6a5df",
+        "android_client_info": {
+          "package_name": "muheeb.com.colcom20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864342398009-f56e6ane73jqfn32e9b89pekhse0ptab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlPox2eHlfOpSykiE1VoXgN-TTvu_jB2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

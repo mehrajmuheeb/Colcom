@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Colcom</string>
+    <string name="registration_number">Registration Number Here</string>
+    <string name="registerButton">Register</string>
+    <string name="confirmOTP">Confirm</string>
+    <string name="enter_your_otp_here">Enter the code here</string>
+    <string name="resend_otp">Didn\'t get the code\?  Resend OTP </string>
+    <string name="time_otp">Time elapsed :</string>
+
+
+    <string name="mail">ColCom User</string>
+
+    <string name="drawer_open">Open</string>
+
+    <string name="drawer_close">Close</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct!</string>
+
+
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="q1">1.Punctuality</string>
+    <string name="q2">2.Communication Skills</string>
+    <string name="q3">3.Teaching Methodology</string>
+    <string name="q4">4.Behaviour</string>
+    <string name="q5">5.Presentaion</string>
+    <string name="q6">6.Helping Attitude</string>
+
+
+    <string name="chat_room">Chat Room</string>
+    <string name="repo">Repository</string>
+    <string name="notification">Notifications</string>
+    <string name="feedback">Feedback Forum</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="hint_message">Message Here</string>
+    <string name="send">Send</string>
+
+
+    // Intro
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_heading"> ColCom </string>
+    <string name="slide_1_title"> Get Started </string>
+    <string name="slide_1_desc">Bridging the barriers in educational institutes!</string>
+
+    <string name="slide_2_title"> Chats </string>
+    <string name="slide_2_desc"> Connect with teachers and classmates instantly !</string>
+
+    <string name="slide_3_title"> Notifications </string>
+    <string name="slide_3_desc"> Get vital information in real time !</string>
+
+    <string name="slide_4_title"> Repository </string>
+    <string name="slide_4_desc"> Study material available at one place !</string>
+
+    <string name="slide_5_title"> Feedback </string>
+    <string name="slide_5_desc">We all need people who will give us feedback. That’s how we improve !</string>
+
+
+    // About Activity
+
+    <string name="abt_app"> Take advantage of this app.</string>
+    <string name="abt_app1"> Work in real time !   </string>
+    <string name="abt_developer"> DEVELOPERS : </string>
+    <string name="developer1"> Andleeb Amin </string>
+    <string name="developer2"> Bisma Qadri </string>
+    <string name="developer3"> Tabish Rasool Mir </string>
+    <string name="developer4"> Muheeb Mehraj </string>
+    <string name="abt_app2"> Bridging the barriers in educational institutes! </string>
+
+</resources>

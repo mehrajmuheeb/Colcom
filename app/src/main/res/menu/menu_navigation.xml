@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_home" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/chats"
+            android:title="Chat Room"
+            android:icon="@drawable/ic_chat2" />
+
+        <item
+            android:id="@+id/repository"
+            android:title="Repository"
+            android:icon="@drawable/ic_repo"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/notification"
+            android:title="Notifications"
+            android:icon="@drawable/ic_notifications"/>
+        <item
+            android:id="@+id/feedback"
+            android:title="Feedback Forum"
+            android:icon="@drawable/ic_feedback"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/ic_info"/>
+    </group>
+</menu>
